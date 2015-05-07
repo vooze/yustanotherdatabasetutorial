@@ -1,0 +1,28 @@
+This directory holds a number of files that will allow building a small webinterfaced database system.
+
+A number of shell scripts will handle the tasks of deploying, or rolling back theese facilities
+
+
+for this to work the user running the scripts must have write permission to /var/www
+
+This may be done as  :  sudo chmod a+w /var/www
+Orr making a group of webdevelopers and give acces through group permissions
+
+
+Files:
+
+deploy.bash		will copy all rellevant files to /var/www
+createdatabase.bash	will create the database from scratch with few elements
+remove.bash 		will remove all copied files (from this project) from /var/www
+displaydata.bash	will display data on the console
+index.html		will show a "home page" for the database(with links)
+old_loans.php		will display a list of all loans from the database
+test.php		for testing differet features of php and html
+
+
+
+TODO
+	Consider the lack of security in the project
+	Consider handling of a common header and footer concept
+	consider use of git
+
