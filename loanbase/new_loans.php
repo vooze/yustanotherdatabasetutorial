@@ -12,7 +12,11 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "select * from borrowers join items join transactions where borrowers.borower_id = transactions.borrower_id and items.item_id = transactions.item_id;";
+$sql = "select * from borrowers 
+join items join transactions 
+where 
+borrowers.borower_id = transactions.borrower_id 
+and items.item_id = transactions.item_id  order by borrower_name  ;";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -104,3 +108,4 @@ mysqli_close($conn);
 
 
 ?> 
+<?php include 'footer.php';?>

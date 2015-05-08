@@ -38,3 +38,4 @@ mysqli_close($conn);
 </html>
 
 
+<?php include 'footer.php';?>

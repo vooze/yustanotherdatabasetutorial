@@ -9,5 +9,6 @@ where
 	transactions.item_id = items.item_id
 	and
 	borrowers.borower_id = transactions.borrower_id
+order by borrower_name
 ;
 STOP
