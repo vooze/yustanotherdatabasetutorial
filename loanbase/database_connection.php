@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "rootbase";
+$password = "rootpass";
 $dbname = "borrowbase";
 
 // Create connection
