@@ -1,5 +1,5 @@
 #!/bin/bash
-mysql --local-infile --user=root <<STOP
+mysql --local-infile --user=root --password=rootpass  <<STOP
 drop database if exists borrowbase;
 create database if not exists borrowbase;
 use borrowbase;
