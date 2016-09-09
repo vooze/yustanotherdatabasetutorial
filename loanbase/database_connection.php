@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "192.168.33.11";
 $username = "root";
 $password = "rootpass";
 $dbname = "borrowbase";
